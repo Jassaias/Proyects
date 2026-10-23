@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctame </title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=deployed_code" />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/csscontacto.css">
+    <link rel="shortcut icon" href="iconos/LOGOJASFAL (1).ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <div class="marca">
+            
+            <img src="iconos/LOGOJASFAL (1).ico" alt="" class="icono">
+            <span>Jasfal</span>
+        </div>
+
+        <nav class="menu">
+            <a href="index.html">Acerca de mí</a>
+            <a href="index.html#filosofia">Filosofía</a>
+            <a href="index.html#habilidades">Habilidades</a>
+            <a href="proyectos.html" class="activo">Contáctame</a>
+        </nav>
+    </header>
+
+    <main class="container py-5">
+        <div class="row align-items-center g-5">
+
+            <section class="col-lg-5">
+                <p class="etiqueta">CONTACTO</p>
+
+                <h1>Hablemos de <span>ideas.</span></h1>
+
+                <p class="descripcion">
+                    ¿Tienes una propuesta, una idea o quieres colaborar
+                    en algún proyecto? Envíame un mensaje.
+                </p>
+
+                <div class="linea"></div>
+
+                <p class="frase">
+                    Toda gran idea comienza con una conversación.
+                </p>
+            </section>
+
+            <section class="col-lg-7">
+                <div class="formulario">
+                    <h2>Contáctame</h2>
+                    <p class="texto-secundario">
+                        Completa los siguientes campos.
+                    </p>
+
+                    <form id="formularioContacto">
+
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">
+                                Nombre completo
+                            </label>
+                            <input type="text" class="form-control"
+                                   id="nombre" name="nombre"
+                                   placeholder="Tu nombre" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">
+                                Correo electrónico
+                            </label>
+                            <input type="email" class="form-control"
+                                   id="correo" name="correo"
+                                   placeholder="correo@ejemplo.com" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="asunto" class="form-label">
+                                Asunto
+                            </label>
+                            <input type="text" class="form-control"
+                                   id="asunto" name="asunto"
+                                   placeholder="Motivo del mensaje" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">
+                                Mensaje
+                            </label>
+                            <textarea class="form-control"
+                                      id="mensaje" name="mensaje"
+                                      rows="5"
+                                      placeholder="Escribe tu mensaje..."
+                                      required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-rojo w-100">
+                            Enviar mensaje
+                        </button>
+
+                        <p id="estado" class="mt-3 mb-0"></p>
+                    </form>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        Copyright © 2026 Jassiel Falcon | Desarrollo de Software
+    </footer>
+
+    <script>
+        document.getElementById("formularioContacto")
+            .addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                document.getElementById("estado").textContent =
+                    "Formulario validado. Falta configurar el envío de mensajes.";
+            });
+    </script>
+
+</body>
+</html>

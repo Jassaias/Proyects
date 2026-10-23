@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Loop:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Zen+Loop:ital@0;1&display=swap');
+
+@font-face {
+    font-family: "Bubbler";
+    src: url("../font/BubblerOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Chilanka";
+    src: url("../font/Chilanka-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Redes";
+    src: url("../font/Grunge-Social-Media.ttf");
+}
+
+:root {
+    --rojo: #e63946;
+    --negro: #000000;
+    --gris: #222629;
+    --blanco: #ffffff;
+    --gris-texto: #cccccc;
+}
+
+body {
+    margin: 0;
+    background-color: var(--negro);
+    color: var(--blanco);
+    font-family: Arial, sans-serif;
+}
+
+.encabezado {
+    background-color: var(--gris);
+    min-height: 100px;
+    padding: 10px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 27px;
+}
+
+.icono {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.etiqueta {
+    color: var(--rojo);
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+
+.descripcion,
+.frase {
+    color: var(--gris-texto);
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+
+
+.formulario {
+    background-color: var(--gris);
+    padding: 30px;
+    border-radius: 8px;
+    border-top: 4px solid var(--rojo);
+}
+
+.formulario h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.texto-secundario {
+    color: var(--gris-texto);
+    margin-bottom: 25px;
+}
+
+.form-label {
+    color: var(--blanco);
+}
+
+.form-control {
+    background-color: var(--negro);
+    color: var(--blanco);
+    border: 1px solid #555555;
+}
+
+.form-control::placeholder {
+    color: #999999;
+}
+
+.form-control:focus {
+    background-color: var(--negro);
+    color: var(--blanco);
+    border-color: var(--rojo);
+    box-shadow: 0 0 0 0.2rem rgba(230, 57, 70, 0.2);
+}
+
+.btn-rojo {
+    background-color: var(--rojo);
+    color: var(--blanco);
+    border: 1px solid var(--rojo);
+    padding: 12px;
+    font-weight: bold;
+}
+
+.btn-rojo:hover {
+    background-color: #bd2634;
+    color: var(--blanco);
+    border-color: #bd2634;
+}
+
+footer {
+    background-color: var(--gris);
+    color: var(--gris-texto);
+    padding: 22px;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .encabezado {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .menu {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    .formulario {
+        padding: 22px;
+    }
+}
+
+#redes{
+        width: 50%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+        #redes a{
+            font-family: Redes, cursive;
+        }
